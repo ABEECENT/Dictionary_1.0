@@ -37,7 +37,7 @@ def getdef(word):
         return data[word.upper()]
     elif len(get_close_matches(word,data.keys()))>0:
         print('Did you mean this ==> '+get_close_matches(word,data.keys())[0])
-        decide=input('press y for yes and n for no')
+        decide=input('press y for yes and n for no ==> ')
         if decide=='y':
             return data[get_close_matches(word,data.keys())[0]]
         elif decide=='n':
